@@ -1,0 +1,139 @@
+/*
+    Style generique *{}
+    qui s'applique à toute la page.
+    overflow : permet une adaptation en fonction du contenu
+    les texte feront agrandir la page si besoin
+*/
+*{
+    overflow: auto;
+}
+
+
+/*
+        <!-- Informations sur les styles 
+        avec id="categorie"
+        #categorie : concernera tout élément identifié "categorie"
+        p#categorie : uniquement les paragraphe identifié "categorie"
+        ul#categorie : uniquement les ul identifié "categorie"
+    
+        autre possibilité : utiliser des classes
+        (avec des points cette fois ci dans style)
+        p.categorie : uniquement les paragraphe identifié "categorie"
+    -->
+*/
+body {
+    background-color: #8BA1BB;
+    font-family: Arial;
+    margin:0;
+}
+div.contenu {
+    background-color: white;
+    margin: 0px 10% 60px 10%;
+    padding: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 10px #6C829D;
+}
+div.centre {
+    text-align: center;
+    padding:0px
+}
+div.categorie {
+    margin-top: 40px;
+    margin-bottom: -18px;
+}
+p.categorie{
+    background-color: black;
+    color:white;  
+    display:inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 8px 18px;  
+}
+h1{
+    margin:10px    
+}
+p.separateur {
+    background-color: black;
+    width: 40%;
+    height: 1px;
+    display:inline-block;
+    margin: 0px;
+}
+p.description{
+    max-width: 400px;
+    font-size: small;
+    display: inline-block;
+}
+div.info {
+    background-color: lightgray;
+    position : relative;
+}
+img.info {
+    display:block;
+    width:100%;
+    min-height: 200px;
+    max-height: 450px;
+    object-fit: cover;
+}
+table.info {
+    position : absolute;
+    bottom: 0;
+    width:100%; 
+    height: 50px;
+    background-color: #6C829DC0;
+    color: white;">
+}
+table.info tr{
+    text-align:center;
+    font-size: 90%;
+}   
+
+div.colonne {
+    width: 48%;
+    display: inline-block;
+    margin-top: 20px;
+}
+div.colonne h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-bottom: 5px;
+    border-bottom: 5px solid #6C829D;
+}
+div.colonne1 {
+}
+div.colonne2 {
+    float: right;
+}
+div.colonne1 p {
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid lightblue;
+    padding: 8px;
+    margin: 8px
+}
+table.instruction tr {
+    height: 40px;
+}
+table.instruction th {
+    vertical-align:top;
+}
+table.instruction p.instruction_nb {
+    background-color: #6C829D;
+    color: white;
+    width: 25px;
+    height: 25px;
+    text-align:center;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 4px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin:0px;
+}
+table.instruction td.instruction_td {
+    vertical-align:top;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
