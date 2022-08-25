@@ -8,7 +8,6 @@
     overflow: auto;
 }
 
-
 /*
         <!-- Informations sur les styles 
         avec id="categorie"
@@ -23,22 +22,17 @@
 */
 body {
     background-color: #8BA1BB;
+    min-width: 280px;
+    max-width: 800px;
     font-family: Arial;
-    margin:0;
-}
-div.contenu {
-    background-color: white;
-    margin: 0px 10% 60px 10%;
-    padding: 30px;
-    font-size: 14px;
-    box-shadow: 0px 0px 10px 10px #6C829D;
+    margin:auto;
 }
 div.centre {
     text-align: center;
     padding:0px
 }
 div.categorie {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: -18px;
 }
 p.categorie{
@@ -49,8 +43,15 @@ p.categorie{
     margin-bottom: 0px;
     padding: 8px 18px;  
 }
+div.contenu {
+    background-color: white;
+    margin: 0px 20px 40px 20px ;
+    padding: 4%;
+    box-shadow: 0px 0px 10px 10px #6C829D;
+}
 h1{
-    margin:10px    
+    font-size: x-large;
+    margin: 10px 10px 0px 10px;     
 }
 p.separateur {
     background-color: black;
@@ -61,7 +62,7 @@ p.separateur {
 }
 p.description{
     max-width: 400px;
-    font-size: small;
+    font-size: smaller;
     display: inline-block;
 }
 div.info {
@@ -79,35 +80,35 @@ table.info {
     position : absolute;
     bottom: 0;
     width:100%; 
-    height: 50px;
+    height: 15%;
     background-color: #6C829DC0;
     color: white;">
 }
 table.info tr{
     text-align:center;
-    font-size: 90%;
+    font-size: smaller;
 }   
 
 div.colonne {
-    width: 48%;
+    width: 100%;
     display: inline-block;
     margin-top: 20px;
 }
 div.colonne h2{
     text-align: center;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: small;
     padding-bottom: 5px;
     border-bottom: 5px solid #6C829D;
 }
 div.colonne1 {
 }
 div.colonne2 {
-    float: right;
+    /* float: right; */
 }
 div.colonne1 p {
     text-align: center;
-    font-size: 14px;
+    font-size: smaller;
     border: 1px solid lightblue;
     padding: 8px;
     margin: 8px
@@ -124,7 +125,7 @@ table.instruction p.instruction_nb {
     width: 25px;
     height: 25px;
     text-align:center;
-    font-size: 16px;
+    font-size: small;
     font-weight: bold;
     padding-top: 4px;
     box-sizing: border-box;
@@ -133,7 +134,80 @@ table.instruction p.instruction_nb {
 }
 table.instruction td.instruction_td {
     vertical-align:top;
-    font-size: 14px;
+    font-size: smaller;
     padding-left: 10px;
+}
+
+p.description{
+    font-size: smaller;
+}
+
+/* Style pour ordinateurs */
+@media only screen and (min-width: 480px) {
+    h1{
+        font-size: xx-large;
+        margin: 10px 10px 10px 10px;     
+    }
+    div.categorie {
+        margin-top: 40px;
+        margin-bottom: -18px;
+    }
+    div.contenu {
+        margin: 0px 40px 40px 40px;
+    }
+    div.colonne {
+        width: 48%;
+    }
+    div.colonne2 {
+        float: right;
+    }
+    
+    p.description{
+        font-size: small;
+    }
+    div.colonne h2{
+        font-size: medium;
+    }
+    table.info tr{
+        font-size: small;
+    }   
+    div.colonne1 p {
+        font-size: small;
+    }
+    table.instruction p.instruction_nb {
+        font-size: medium;
+    }
+    table.instruction td.instruction_td {
+        font-size: small;
+    }
+}
+
+/* Style pour grands écrans */
+@media only screen and (min-width: 800px) {
+    p.description{
+        font-size: medium;
+    }
+        div.colonne h2{
+        font-size: large;
+    }
+    table.info tr{
+        font-size: medium;
+    }   
+    div.colonne1 p {
+        font-size: medium;
+    }
+    table.instruction p.instruction_nb {
+        font-size: large;
+    }
+    table.instruction td.instruction_td {
+        font-size: medium;
+    }
+}
+
+/* Style pour très petites largeurs */
+@media only screen and (max-width: 320px) {
+    table.info tr{
+        font-size: x-small;
+    }   
 }
 
